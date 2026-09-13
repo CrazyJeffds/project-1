@@ -1,0 +1,36 @@
+# Секреты
+.env
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# База данных
+database/bot.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Временные файлы бота
+storage/downloads/*
+storage/uploads/*
+storage/converted/*
+
+# yt-dlp
+*.part
+*.ytdl
+
+# IDE
+.vscode/
+.idea/
+
+# Linux
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
