@@ -1,2 +1,2 @@
 # project-1
-My projects, created either with the help of AI or using my own methods.
+The work was done using ChatGPT—specifically, a Telegram bot for file conversion—and took over eight hours to complete.
