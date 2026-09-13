@@ -1,6 +1,36 @@
 # project-1
 The work was done using ChatGPT—specifically, a Telegram bot for file conversion—and took over eight hours to complete.
 
+Технологии
+
+Проект использует:
+
+Python 3
+aiogram 3
+yt-dlp
+FFmpeg
+Pillow
+SQLite
+qrcode
+python-dotenv
+
+
+git clone https://github.com/CrazyJeffds/project-1.git 
+
+cd project-1
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+
+nano .env
+BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+
+python bot.py
+
 # Telegram Media Tool Bot
 
 Многофункциональный Telegram-бот для скачивания, конвертации и обработки медиафайлов.
@@ -107,7 +137,10 @@ The work was done using ChatGPT—specifically, a Telegram bot for file conversi
 🖼 ИЗОБРАЖЕНИЯ  📄 ДОКУМЕНТЫ
 🧰 ИНСТРУМЕНТЫ 🗜 СЖАТИЕ
 ⚙️ НАСТРОЙКИ   🕘 ИСТОРИЯ
-
 🎮 ИГРЫ         🩸 ГАЛЕРЕЯ
-
 ❤️ ПОДДЕРЖАТЬ ПРОЕКТ
+
+
+
+
+
