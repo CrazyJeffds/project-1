@@ -1,7 +1,18 @@
-# project-1<img width="369" height="551" alt="Снимок экрана 2026-09-15 130236" src="https://github.com/user-attachments/assets/c6ad644e-c3ba-4cbb-bf06-42ea41683572" />
+<img width="369" height="551" alt="Снимок экрана 2026-09-15 130236" src="https://github.com/user-attachments/assets/c6ad644e-c3ba-4cbb-bf06-42ea41683572" />
 
-# 
+# git clone https://github.com/CrazyJeffds/project-1.git 
 
+# cd YOUR_REPOSITORY
+
+# python3 -m venv venv
+
+# source venv/bin/activate
+
+# pip install -r requirements.txt
+
+# sudo apt install ffmpeg
+
+# python bot.py
 
 
 ### Language & Localization
