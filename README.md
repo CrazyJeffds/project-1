@@ -1,346 +1,157 @@
-# project-1
-The work was done using ChatGPT—specifically, a Telegram bot for file conversion—and took over eight hours to complete.
-# ⚡ Telegram Media Tool Bot
+# project-1<img width="369" height="551" alt="Снимок экрана 2026-09-15 130236" src="https://github.com/user-attachments/assets/c6ad644e-c3ba-4cbb-bf06-42ea41683572" />
 
-<p align="center">
-  <b>Многофункциональный Telegram-бот для скачивания, конвертации и обработки медиафайлов</b>
-</p>
+# 
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/aiogram-3.x-2CA5E0?style=for-the-badge&logo=telegram" alt="aiogram">
-  <img src="https://img.shields.io/badge/FFmpeg-enabled-black?style=for-the-badge&logo=ffmpeg" alt="FFmpeg">
-  <img src="https://img.shields.io/badge/yt--dlp-enabled-red?style=for-the-badge" alt="yt-dlp">
-</p>
 
----
 
-## 🧩 О проекте
+### Language & Localization
 
-**Telegram Media Tool Bot** — универсальный Telegram-бот для работы с медиа и файлами прямо внутри Telegram.
+The current bot interface is primarily available in Russian.
 
-Бот умеет:
+The project documentation and README are written in English to make the repository easier to understand for a wider developer audience.
 
-- 📥 скачивать видео и аудио по ссылкам;
-- 🎬 конвертировать видео в разные форматы;
-- 🎵 конвертировать аудио;
-- 🖼 работать с изображениями;
-- 🗜 сжимать видео и изображения;
-- 🔳 создавать QR-коды;
-- 🎤 преобразовывать голосовые сообщения в MP3;
-- ⭕ сохранять видеокружки в MP4;
-- 🏷 конвертировать статические стикеры в PNG;
-- 🕘 хранить историю операций;
-- ⚙️ сохранять пользовательские настройки;
-- ⭐ принимать поддержку через Telegram Stars.
+English localization for the bot interface is planned for a future update.
+
+Planned localization improvements include:
+
+- English interface
+- Russian / English language switch
+- Localized menu buttons
+- Localized error messages
+- Localized help text
+- Localized settings
+- Localized notifications
+
+The long-term goal is to make the bot convenient for both Russian-speaking and English-speaking users.
+
+# Telegram Media & File Utility Bot
+
+A multifunctional Telegram bot written in Python.
+
+The bot can download media from popular platforms, convert files, compress videos and images, work with audio, convert PDF files to Word, and provide several additional tools.
+
+This project was created mainly for learning and practicing Python, asynchronous programming, Telegram Bot API, file processing, ffmpeg, yt-dlp, and project structure.
 
 ---
 
-## 🌑 Интерфейс
+## Features
 
-Бот оформлен в едином тёмном / cyber-style интерфейсе.
+### Media Downloading
 
-```text
-◈ NEON TOOLS
+The bot can download media from:
 
-━━━━━━━━━━━━━━━━━━
-⚡ МЕДИА И ФАЙЛОВЫЕ ИНСТРУМЕНТЫ
-━━━━━━━━━━━━━━━━━━
+- YouTube
+- TikTok
+- Instagram
+- SoundCloud
 
-📥 СКАЧАТЬ
-
-🎬 ВИДЕО        🎵 АУДИО
-🖼 ИЗОБРАЖЕНИЯ  📄 ДОКУМЕНТЫ
-🧰 ИНСТРУМЕНТЫ 🗜 СЖАТИЕ
-⚙️ НАСТРОЙКИ   🕘 ИСТОРИЯ
-
-🎮 ИГРЫ         🩸 ГАЛЕРЕЯ
-
-❤️ ПОДДЕРЖАТЬ ПРОЕКТ
-```
+Depending on the source, the bot can download video or audio files.
 
 ---
 
-## 🚀 Возможности
+### Video Tools
 
-### 📥 Скачивание медиа
+The bot supports:
 
-- предпросмотр ссылки перед скачиванием;
-- отображение названия ролика;
-- отображение автора;
-- отображение длительности;
-- определение максимального качества;
-- выбор между видео и MP3;
-- выбор качества: 360p / 480p / 720p / 1080p / авто;
-- отображение прогресса скачивания;
-- автоматическая очистка временных файлов.
+- Video downloading
+- Video compression
+- Video to MP3 conversion
+- Video format conversion
 
-### 🎬 Видео
+Supported video formats include:
 
-- видео → MP3;
-- MP4;
-- MOV;
-- AVI;
-- WMV;
-- WEBM;
-- сжатие видео.
-
-### 🎵 Аудио
-
-Поддерживаемые форматы:
-
-- MP3;
-- WAV;
-- FLAC;
-- AAC;
-- M4A;
-- M4R;
-- OGG.
-
-Поддерживаемый битрейт MP3:
-
-- 128 kbps;
-- 192 kbps;
-- 256 kbps;
-- 320 kbps.
-
-### 🖼 Изображения
-
-- JPG → PNG;
-- PNG → JPG;
-- сжатие изображений;
-- статический Telegram-стикер → PNG.
-
-### 🧰 Дополнительные инструменты
-
-- генератор QR-кодов;
-- информация о файле;
-- голосовое сообщение → MP3;
-- Telegram-видеокружок → MP4;
-- история операций;
-- пользовательские настройки.
+- MP4
+- MOV
+- AVI
+- WMV
+- WEBM
 
 ---
 
-## 🛠 Используемые технологии
+### Audio Tools
 
-| Технология | Назначение |
-|---|---|
-| **Python 3** | основной язык проекта |
-| **aiogram 3** | Telegram Bot API |
-| **yt-dlp** | скачивание медиа |
-| **FFmpeg** | обработка видео и аудио |
-| **Pillow** | обработка изображений |
-| **SQLite** | настройки и история |
-| **qrcode** | создание QR-кодов |
-| **python-dotenv** | переменные окружения |
+The bot can convert audio files between different formats.
 
----
+Supported formats include:
 
-# 🚀 Установка и запуск
-
-## 1. 📥 Клонировать репозиторий
-
-```bash
-git clone https://github.com/CrazyJeffds/project-1.git
-```
+- MP3
+- WAV
+- FLAC
+- AAC
+- M4A
+- M4R
+- OGG
 
 ---
 
-## 2. 📂 Перейти в папку проекта
+### Image Tools
 
-```bash
-cd project-1
-```
+The bot supports:
 
----
-
-## 3. 🐍 Создать виртуальное окружение
-
-```bash
-python3 -m venv venv
-```
+- Image compression
+- Image processing
+- File size reduction
 
 ---
 
-## 4. ⚡ Активировать виртуальное окружение
+### Document Tools
 
-### Linux / Kali Linux
+The bot can work with documents.
 
-```bash
-source venv/bin/activate
-```
+Currently supported:
 
-### Windows
-
-```powershell
-venv\Scripts\activate
-```
+- PDF to Word conversion
 
 ---
 
-## 5. 📦 Установить зависимости
+### Compression
 
-```bash
-pip install -r requirements.txt
-```
+The bot includes tools for:
 
----
+- Video compression
+- Image compression
 
-## 6. 🎬 Установить FFmpeg
-
-### Kali Linux / Debian / Ubuntu
-
-```bash
-sudo apt update
-sudo apt install ffmpeg
-```
-
-Проверить установку:
-
-```bash
-ffmpeg -version
-```
+This can be useful when a file is too large to send through Telegram.
 
 ---
 
-## 7. 🔐 Создать файл `.env`
+### History
 
-```bash
-nano .env
-```
-
-Добавить внутрь:
-
-```env
-BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
-```
-
-Токен Telegram-бота можно получить через `@BotFather`.
-
-> ⚠️ Никогда не публикуй настоящий `BOT_TOKEN` в GitHub.
+The bot can store information about recent operations and downloads.
 
 ---
 
-## 8. ▶️ Запустить бота
+### Mini Games
 
-```bash
-python bot.py
-```
+The bot also includes simple entertainment features such as:
 
-При успешном запуске:
-
-```text
-Запуск бота...
-Бот запущен и ожидает сообщения
-```
+- Guess the Number game
 
 ---
 
-## 📁 Структура проекта
+### Project Support
 
-```text
-telegram_converter_bot/
-├── bot.py
-├── config.py
-├── requirements.txt
-├── handlers/
-├── keyboards/
-├── services/
-├── states/
-├── database/
-├── storage/
-├── utils/
-└── assets/
-```
+Users can support the project using Telegram Stars.
 
 ---
 
-## 🗄 База данных
+## Technologies
 
-Проект использует **SQLite**.
+The project uses:
 
-Файл базы создаётся автоматически:
+- Python
+- aiogram
+- yt-dlp
+- ffmpeg
+- asyncio
+- SQLite
+- python-dotenv
 
-```text
-database/bot.db
-```
-
-В базе хранятся настройки пользователей и история операций.
-
----
-
-## ⭐ Telegram Stars
-
-В боте реализована добровольная поддержка проекта через Telegram Stars.
-
-Доступные суммы:
-
-```text
-⭐ 25
-⭐ 50
-⭐ 100
-⭐ 250
-⭐ 500
-```
+Additional libraries are used for file conversion and processing.
 
 ---
 
-## 🔒 Безопасность
 
-В репозиторий не должны попадать:
-
-```text
-.env
-BOT_TOKEN
-database/bot.db
-venv/
-storage/downloads/
-storage/uploads/
-storage/converted/
-```
-
----
-
-## 🧪 Статус проекта
-
-Проект рабочий и продолжает развиваться.
-
-Планируемые функции:
-
-- ✂️ обрезка видео;
-- ✂️ обрезка аудио;
-- 🎞 GIF ↔ MP4;
-- 📄 несколько изображений → PDF;
-- 📦 ZIP нескольких файлов;
-- 📐 изменение размера изображений;
-- 🧹 удаление метаданных;
-- 📊 админ-панель и статистика;
-- 🚦 очередь задач.
-
----
-
-## 🔄 Обновление проекта
-
-После изменений:
-
-```bash
-git add .
-git commit -m "Описание изменений"
-git push
-```
-
----
-
-## 👤 Автор
-
-GitHub: **CrazyJeffds**
-
----
-
-## ⭐ Поддержка проекта
-
-Если проект оказался полезным — поставь ⭐ репозиторию.
 
 
 
